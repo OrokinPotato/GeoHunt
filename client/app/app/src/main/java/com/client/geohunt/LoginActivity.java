@@ -32,17 +32,14 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                connectUser(editUsername.getText().toString());
-                //Intent i = new Intent(LoginActivity.this, MainActivity.class);
-                //startActivity(i);
+                //connectUser(editUsername.getText().toString());
+                Intent i = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(i);
             }
         });
     }
 
     public void connectUser(String username) {
-        viewModel.createPost(username);
-    }
-/*
         User user = new User(username);
         user.setUsername(username);
         user.setScore(0);
@@ -53,6 +50,4 @@ public class LoginActivity extends AppCompatActivity {
                 }
         });
     }
-
- */
 }

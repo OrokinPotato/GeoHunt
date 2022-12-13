@@ -137,8 +137,4 @@ public class GeoAppNetwork {
 
         return data;
     }
-
-    public void createPost(String username) {
-        geoAPI.createPost(username);
-    }
 }

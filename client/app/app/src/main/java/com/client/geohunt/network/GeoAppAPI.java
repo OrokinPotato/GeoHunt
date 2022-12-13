@@ -28,9 +28,6 @@ public interface GeoAppAPI {
             @Body User user
     );
 
-    @FormUrlEncoded
-    @POST("/user")
-    Call<User> createPost(@Field("username") String username);
     /*
     @POST("/profils/{username}")
     Response<Message> postUser(

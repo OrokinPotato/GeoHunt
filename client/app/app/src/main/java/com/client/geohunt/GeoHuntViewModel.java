@@ -64,7 +64,4 @@ public class GeoHuntViewModel extends AndroidViewModel {
         return str;
     }
 
-    public void createPost(String username) {
-       geoAppNetwork.createPost(username);
-    }
 }
