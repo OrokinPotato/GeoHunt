@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">GeoHunt</string>
+    <string name="location">Location</string>
+    <string name="caches">Caches</string>
+    <string name="profile">Profile</string>
+    <string name="get_location">Get Location</string>
+    <string name="poi">Points d\'intérêt</string>
+    <string name="account">Mon profil</string>
+    <string name="greeting">Bonjour,</string>
+    <string name="user0">User</string>
+    <string name="email">Adresse e-mail:</string>
+    <string name="emailExample">user@example.com</string>
+    <string name="password">Mot de passe:</string>
+    <string name="asterix">*****</string>
+    <string name="score">Votre score:</string>
+    <string name="found">Vous avez trouvé:</string>
+    <string name="cacheScore">0</string>
+    <string name="positionText">Votre dernière position:</string>
+    <string name="defaultLastPosition">45.378645, -71.929626</string>
+    <string name="findCache">Find caches</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="se_connecter">Se connecter</string>
+    <string name="connexion">Connexion</string>
+    <string name="utilisateur">Utilisateur</string>
+</resources>

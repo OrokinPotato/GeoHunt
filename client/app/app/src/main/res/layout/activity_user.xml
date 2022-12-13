@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    tools:context=".UserActivity">
+
+    <TextView
+        android:id="@+id/tv_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/account"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:icon="@android:drawable/ic_menu_revert"
+        app:iconTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="65dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/greeting"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack" />
+
+    <TextView
+        android:id="@+id/tv_userText"
+        android:layout_width="65dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/user0"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_welcome"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack" />
+
+    <TextView
+        android:id="@+id/tv_emailAddr"
+        android:layout_width="127dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="120dp"
+        android:text="@string/email"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_userAddr"
+        android:layout_width="276dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/emailExample"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_emailAddr" />
+
+    <Button
+        android:id="@+id/btnChangeEmail"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="8dp"
+        app:icon="@android:drawable/stat_notify_sync"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="127dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/password"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_userAddr" />
+
+    <TextView
+        android:id="@+id/tv_userPassword"
+        android:layout_width="276dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/asterix"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_password" />
+
+    <Button
+        android:id="@+id/btnChangePassword"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="8dp"
+        app:icon="@android:drawable/stat_notify_sync"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="127dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/score"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_userPassword" />
+
+    <TextView
+        android:id="@+id/tv_found"
+        android:layout_width="127dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/found"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_score" />
+
+    <TextView
+        android:id="@+id/tv_cacheFoundNum"
+        android:layout_width="33dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="73dp"
+        android:text="@string/cacheScore"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_found"
+        app:layout_constraintTop_toBottomOf="@+id/tv_userPassword" />
+
+    <TextView
+        android:id="@+id/tv_found2"
+        android:layout_width="127dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="73dp"
+        android:text="@string/caches"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_cacheFoundNum"
+        app:layout_constraintTop_toBottomOf="@+id/tv_userPassword" />
+
+    <TextView
+        android:id="@+id/tv_lastPosition"
+        android:layout_width="177dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="37dp"
+        android:text="@string/positionText"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_found" />
+
+    <TextView
+        android:id="@+id/tv_positionLatLng"
+        android:layout_width="177dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/defaultLastPosition"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lastPosition" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
