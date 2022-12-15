@@ -69,8 +69,8 @@ public class CachesActivity extends AppCompatActivity implements
                 if (caches != null){
                     for (Cache cache: caches) {
                         LatLng latLng = new LatLng(Double.parseDouble(cache.getLatitude()), Double.parseDouble(cache.getLongitude()));
-                        String mes = cache.getMessage().getTexte();
-                        locList.add(new Pair<>(latLng, mes));
+                        //String mes = cache.getMessage().getTexte();
+                        locList.add(new Pair<>(latLng, ""));//mes));
                     }
                 }
                 else {

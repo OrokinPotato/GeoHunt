@@ -23,47 +23,25 @@ public class GeoAppNetwork {
     public GeoAppNetwork(){
         geoAPI = RetrofitRequest.getRetrofitInstance().create(GeoAppAPI.class);
     }
-    /*
-    public LiveData<List<Cache>> getCachesList(){
-        final MutableLiveData<List<Cache>> data = new MutableLiveData<>();
-        geoAPI.getCachesList()
-                .enqueue(new Callback<List<Cache>>() {
-                         @Override
-                         public void onResponse(Call<List<Cache>> call, Response<List<Cache>> response) {
-                             Log.d(TAG, "Callback onResponse::" + response);
-                             if (response.body() != null){
-                                 data.setValue(response.body());
-                                 Log.d(TAG, "Data List length::" + response.body().size());
-                                 Log.d(TAG, "Data List 1st elem::" + response.body().get(1).getId());
-                             }
-                         }
-                         @Override
-                         public void onFailure(Call<List<Cache>> call, Throwable t) {
-                            data.setValue(null);
-                            Log.d(TAG, "Callback onFailure::" + t);
-                         }
-                });
-        return data;
-    }
-    */
+
     public LiveData<List<Cache>> getCachesList(){
         final MutableLiveData<List<Cache>> data = new MutableLiveData<>();
         List<Cache> lc = new ArrayList<>();
         geoAPI.getCachesList().enqueue(
-                new Callback<CacheList>() {
+                new Callback<List<Cache>>() {
                     @Override
-                    public void onResponse(Call<CacheList> call, Response<CacheList> response) {
+                    public void onResponse(Call<List<Cache>> call, Response<List<Cache>> response) {
                         Log.d(TAG, "GET return onResponse::" + response.code());
                         if (response.body() != null) {
-                            Log.d(TAG, "Data List Data length::" + response.body().getListCaches().size());
-                            Log.d(TAG, "Data List 1st elem::" + response.body().getListCaches().get(0));
-                            lc.addAll(response.body().getListCaches());
+                            Log.d(TAG, "Data List Data length::" + response.body().size());
+                            Log.d(TAG, "Data List 1st elem::" + response.body().get(0));
+                            lc.addAll(response.body());
                             data.setValue(lc);
                         }
                     }
 
                     @Override
-                    public void onFailure(Call<CacheList> call, Throwable t) {
+                    public void onFailure(Call<List<Cache>> call, Throwable t) {
                         Log.d(TAG, "GET getCachesList onFailure throwable::" + t);
                         data.setValue(null);
                     }

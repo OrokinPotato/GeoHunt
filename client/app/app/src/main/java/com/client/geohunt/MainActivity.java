@@ -85,14 +85,14 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         btnFindCaches.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (user0 != null){
-                    viewModel.postUser(user0).observe(MainActivity.this, new Observer<String>() {
-                        @Override
-                        public void onChanged(String s) {
-                            Log.d(TAG, s);
-                        }
-                    });
-                }
+                //if (user0 != null){
+                //    viewModel.postUser(user0).observe(MainActivity.this, new Observer<String>() {
+                //        @Override
+                //        public void onChanged(String s) {
+                //            Log.d(TAG, s);
+                //        }
+                //    });
+                //}
                 btnCachesList.setClickable(true);
                 btnCachesList.setAlpha(1.0f);
                 /*

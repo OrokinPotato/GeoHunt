@@ -4,6 +4,8 @@ import android.os.Message;
 
 import com.client.geohunt.model.*;
 
+import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.Response;
 import retrofit2.http.*;
@@ -11,7 +13,7 @@ import retrofit2.http.*;
 public interface GeoAppAPI {
 
     @GET("/repere")
-    Call<CacheList> getCachesList();
+    Call<List<Cache>> getCachesList();
 
     @GET("/repere/{id}")
     Call<Cache> getCache(

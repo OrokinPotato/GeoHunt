@@ -8,7 +8,7 @@ public class Cache {
 
    @SerializedName("id")
    @Expose
-   private int id;
+   private String id;
    @SerializedName("latitude")
    @Expose
    private String latitude;
@@ -19,11 +19,11 @@ public class Cache {
    @Expose
    private Texte message;
 
-   public int getId() {
+   public String getId() {
       return id;
    }
 
-   public void setId(int id) {
+   public void setId(String id) {
       this.id = id;
    }
 
